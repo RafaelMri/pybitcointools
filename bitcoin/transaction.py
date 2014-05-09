@@ -165,6 +165,9 @@ def mk_pubkey_script(addr): # Keep the auxiliary functions around for altcoins' 
 
 def mk_scripthash_script(addr):
     return 'a914' + b58check_to_hex(addr) + '87'
+    
+def mk_op_return_script(data):
+    return '6a' + data
 
 # Address representation to output script
 def address_to_script(addr):
