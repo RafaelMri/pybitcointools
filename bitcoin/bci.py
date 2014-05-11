@@ -111,7 +111,7 @@ def eligius_pushtx(tx):
 
 def blockr_pushtx(tx):
     if not re.match('^[0-9a-fA-F]*$', tx): tx = tx.encode('hex')
-    return make_request('http://btc.blockr.io/api/v1/tx/push', '{"hex":"%s"}' % tx)
+    return make_request('http://tbtc.blockr.io/api/v1/tx/push', '{"hex":"%s"}' % tx)
 
 def last_block_height():
     data = make_request('https://blockchain.info/latestblock')
