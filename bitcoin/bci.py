@@ -44,7 +44,7 @@ def blockr_unspent(*args):
     if len(args) == 0: return []
     elif isinstance(args[0],list): addrs = args[0]
     else: addrs = args
-    res = make_request('https://btc.blockr.io/api/v1/address/unspent/'+','.join(addrs))
+    res = make_request('https://tbtc.blockr.io/api/v1/address/unspent/'+','.join(addrs))
     data = json.loads(res)['data']
     o = []
     if 'unspent' in data: data = [data]
