@@ -2,12 +2,12 @@
 
 from distutils.core import setup
 
-setup(name='bitcoin',
+setup(name='bitcoinT',
       version='1.1.8',
       description='Python Bitcoin Tools',
       author='Vitalik Buterin',
       author_email='vbuterin@gmail.com',
-      url='http://github.com/vbuterin/pybitcointools',
+      url='http://github.com/domwoe/pybitcointools',
       packages=['bitcoin'],
       scripts=['pybtctool']
      )
