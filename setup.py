@@ -2,7 +2,7 @@
 
 from distutils.core import setup
 
-setup(name='bitcoinT',
+setup(name='bitcoin',
       version='1.1.8',
       description='Python Bitcoin Tools',
       author='Vitalik Buterin',
