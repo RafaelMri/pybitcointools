@@ -172,7 +172,7 @@ def mk_op_return_script(data):
 # Address representation to output script
 def address_to_script(addr):
     if addr[0] == '3': return mk_scripthash_script(addr)
-    elif addr[0] == '!': return mk_op_return_script(addr[1:-1])
+    elif addr[0] == '!': return mk_op_return_script(addr[1:])
     else: return mk_pubkey_script(addr)
 
 # Output script to address representation
