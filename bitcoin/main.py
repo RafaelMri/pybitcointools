@@ -354,6 +354,13 @@ def pubkey_to_address(pubkey,magicbyte=0):
 
 pubtoaddr = pubkey_to_address
 
+def data_to_hex(inp):
+    leadingzbytes = len(inp)
+    data = str(hex(leadingzbytes))
+    for char in inp:
+       data += str(hex(int(char)))
+    return data
+
 ### EDCSA
 
 def encode_sig(v,r,s):
