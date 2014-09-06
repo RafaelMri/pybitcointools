@@ -167,7 +167,8 @@ def mk_scripthash_script(addr):
     return 'a914' + b58check_to_hex(addr) + '87'
     
 def mk_op_return_script(data):
-    return '6a' + format(len(data)/2, '02x') + data
+    #return '6a' + format(len(data)/2, '02x') + data
+    return '61' + data.encode('hex')
 
 # Address representation to output script
 def address_to_script(addr):
